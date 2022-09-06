@@ -12,11 +12,6 @@ const fieldResult = document.querySelector('.field_result');
 const timeValue = document.querySelector('#time_value');
 const timeResult = document.querySelector('.time_result');
 
-const yearValue = document.querySelector('#year_value');
-const yearResult = document.querySelector('.year_result');
-
-const monthValue = document.querySelector('#month_value');
-const monthResult = document.querySelector('.month_result');
 
 
 function after_click(){
