@@ -208,6 +208,21 @@ body {
     font-size: 20px;
 }
 
+.result .time_result.img_2022{
+    display: none;
+    
+}
+
+.result .time_result.img_2023{
+    display: none;
+    
+}
+
+.result .time_result.img_2024{
+    display: none;
+    
+}
+
 .result span {
     padding: 0 20px;
     font-family: 'GmarketSansMedium';

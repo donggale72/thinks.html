@@ -10,30 +10,33 @@ const fieldValue = document.querySelector('#field_value');
 const fieldResult = document.querySelector('.field_result');
 
 const timeValue = document.querySelector('#time_value');
-const timeResult = document.querySelector('.time_result');
+const timeresult = document.querySelector('time_result');
 
+const img_2022 = document.querySelector('.img_2022');
+const img_2023 = document.querySelector('.img_2023');
+
+const img_2024 = document.querySelector('.img_2024');
 
 
 function after_click(){
     
-    
     loading.style.display = 'none';
-    result.style.display = 'flex'
+    result.style.display = 'flex';
     
-    fieldResult.innerText = fieldValue.value;
+     
+    if (timeValue.value == 2022){
+        img_2022.style.display = 'flex';
+        return false;
+    }else if (timeValue.value == 2023){
+        img_2023.style.display = 'flex';
+        return false;
+    }else if (timeValue.value == 2024){
+        img_2024.style.display = 'flex';
+        return false;
+    }
     
-    const dayValue = parseInt( (10000 / timeValue.value) );
     
-    timeResult.innerText = dayValue;
     
-    const yearValue = parseInt( (10000 / timeValue.value)/365 );
-    
-    yearResult.innerText = yearValue;
-    
-    const monthValue = parseInt( ((10000 / timeValue.value) % 365) /30 );
-    
-    monthResult.innerText = monthValue;
-
 }
 
 function click_start_button(){
