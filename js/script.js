@@ -22,21 +22,29 @@ function after_click(){
     
     loading.style.display = 'none';
     result.style.display = 'flex';
-    
      
     if (timeValue.value == 2022){
         img_2022.style.display = 'flex';
+        img_2023.style.display = 'none';
+        img_2024.style.display = 'none';
+        timeValue.focus();
         return false;
     }else if (timeValue.value == 2023){
         img_2023.style.display = 'flex';
+        img_2022.style.display = 'none';
+        img_2024.style.display = 'none';
+        timeValue.focus();
         return false;
     }else if (timeValue.value == 2024){
         img_2024.style.display = 'flex';
+        img_2022.style.display = 'none';
+        img_2023.style.display = 'none';
+        timeValue.focus();
         return false;
     }
     
     
-    
+     
 }
 
 function click_start_button(){
@@ -71,6 +79,8 @@ function copy_url(){
 
 function open_modal(){
     modal.style.display = 'flex';
+    
+    
 };
 
 function close_modal(){
