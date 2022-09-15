@@ -56,6 +56,10 @@ function click_start_button(){
         alert('시간을 2022이상 값으로 입력해 주세요.');
         timeValue.focus();
         return false;
+    }else if (timeValue.value > 2024){
+        alert('너무먼 2025년 이후의 추석은 의미가 없습니다. 올해의 추석을 즐기세요....');
+        timeValue.focus();
+        return false;
     }
 
     loading.style.display = 'flex';
